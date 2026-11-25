@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Growth Consulting membantu bisnis bertumbuh melalui strategi, pemasaran, dan pendampingan bisnis yang terarah.">
+  <title>GROWTH CONSULTING — Grow with Strategy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#101c2c;--navy2:#17283d;--green:#b9e769;--ink:#182536;--muted:#687586;--paper:#f7f8f5;--line:#e5e9e3;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    h1,h2,h3,.brand{font-family:Manrope,sans-serif;letter-spacing:-.04em}a{text-decoration:none;color:inherit}.container{width:min(1160px,calc(100% - 44px));margin:auto}
+    .topbar{background:var(--navy);color:#d8e2eb;font-size:12px;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px}
+    header{position:sticky;top:0;z-index:20;background:rgba(247,248,245,.93);backdrop-filter:blur(14px);border-bottom:1px solid #e8ece6}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;font-size:19px;letter-spacing:-.06em}.brand span{color:#729c35}
+    .navlinks{display:flex;align-items:center;gap:30px;font-size:13px;color:#526071}.navlinks a:hover{color:#668f2f}
+    .btn{border:0;display:inline-flex;align-items:center;justify-content:center;gap:9px;background:var(--green);color:#182536;padding:14px 21px;border-radius:7px;font-weight:700;font-size:13px;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(.97)}.btn.dark{background:var(--navy);color:white}.btn.outline{background:transparent;border:1px solid #cbd4c7;color:var(--ink)}
+    .hero{background:var(--navy);color:white;position:relative;overflow:hidden;padding:82px 0 78px}
+    .hero:before{content:"";position:absolute;width:650px;height:650px;border:1px solid rgba(185,231,105,.14);border-radius:50%;right:-120px;top:-270px;box-shadow:0 0 0 70px rgba(185,231,105,.025),0 0 0 140px rgba(185,231,105,.02)}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+    .eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#a9d85b;display:flex;align-items:center;gap:10px}.eyebrow:before{content:"";width:26px;height:1px;background:currentColor}
+    h1{font-size:clamp(42px,5.2vw,67px);line-height:1.08;margin:20px 0 22px;max-width:680px}.hero h1 em{font-style:normal;color:var(--green)}
+    .hero-copy{color:#bdc9d5;font-size:16px;max-width:520px;line-height:1.8}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .hero-note{font-size:11px;color:#98a9ba;margin-top:19px}.hero-visual{min-height:420px;position:relative;display:flex;align-items:center;justify-content:center}
+    .visual-card{width:100%;max-width:440px;background:#1b3047;border:1px solid rgba(255,255,255,.12);border-radius:15px;padding:25px;box-shadow:0 25px 70px #07111e88;position:relative;z-index:2}
+    .visual-top{display:flex;justify-content:space-between;color:#aab9c8;font-size:11px}.visual-title{font:700 20px Manrope;margin:28px 0 5px}.visual-sub{font-size:12px;color:#aab9c8}
+    .chart{height:150px;margin:24px 0 12px;border-bottom:1px solid #496078;display:flex;align-items:end;gap:13px;padding:0 7px;position:relative}
+    .chart:before,.chart:after{content:"";position:absolute;left:0;right:0;border-top:1px dashed #40566b}.chart:before{top:33%}.chart:after{top:66%}
+    .bar{flex:1;background:linear-gradient(180deg,#c8f17d,#76a73b);border-radius:4px 4px 0 0;min-width:12px;z-index:1}
+    .chart-labels{display:flex;justify-content:space-between;color:#8fa2b4;font-size:9px}.metric-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:23px}
+    .metric{background:#223b55;border-radius:8px;padding:13px}.metric strong{display:block;color:var(--green);font:700 22px Manrope}.metric span{font-size:10px;color:#afbdca}
+    .floating-tag{position:absolute;right:-12px;bottom:27px;background:var(--green);color:#1b2b1c;padding:14px 18px;border-radius:8px;font-size:11px;font-weight:700;z-index:3;box-shadow:0 12px 30px #0003}
+    .trust{background:white;border-bottom:1px solid var(--line);padding:22px 0}.trust .container{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.trust-label{font-size:10px;color:#87919b;letter-spacing:.12em;text-transform:uppercase}.trust-item{font:700 13px Manrope;color:#7c8793;letter-spacing:.04em}
+    section{padding:88px 0}.section-head{max-width:650px;margin-bottom:42px}.section-head.center{text-align:center;margin:0 auto 45px}.kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#71983d;font-weight:700}
+    h2{font-size:clamp(30px,4vw,44px);line-height:1.15;margin:13px 0 15px}.section-head p{color:var(--muted);margin:0;line-height:1.8}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{background:white;border:1px solid var(--line);border-radius:11px;padding:27px;transition:.2s}.service:hover{transform:translateY(-5px);box-shadow:0 18px 35px #1c2b1810}
+    .service-icon{width:43px;height:43px;border-radius:9px;background:#eff6e5;display:grid;place-items:center;font-size:20px}.service h3{font-size:18px;margin:22px 0 9px}.service p{font-size:13px;color:var(--muted);line-height:1.8;margin:0}
+    .why{background:#edf1e9}.why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.why-visual{background:var(--navy);border-radius:14px;min-height:400px;padding:32px;color:white;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+    .why-visual:after{content:"G";font:800 300px Manrope;color:#ffffff0b;position:absolute;right:-5px;bottom:-115px}.why-visual .big{font:800 76px Manrope;color:var(--green);line-height:1}.why-visual p{color:#b9c7d4;font-size:13px;max-width:250px}
+    .why-list{display:grid;gap:22px}.why-item{display:grid;grid-template-columns:38px 1fr;gap:15px}.check{width:34px;height:34px;border-radius:50%;background:#dcebc8;color:#527b22;display:grid;place-items:center;font-weight:800}.why-item h3{font-size:16px;margin:0 0 5px}.why-item p{font-size:13px;color:var(--muted);margin:0;line-height:1.75}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border-top:1px solid #cbd4c7;padding-top:20px}.step-no{font:700 12px Manrope;color:#80a64b}.step h3{font-size:16px;margin:13px 0 7px}.step p{font-size:12px;color:var(--muted);line-height:1.8;margin:0}
+    .testimonials{background:var(--navy);color:white}.testimonials .section-head p{color:#b7c3cf}.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.quote{background:#1b3047;border:1px solid #30445a;border-radius:10px;padding:25px}.stars{color:var(--green);letter-spacing:3px;font-size:12px}.quote blockquote{font-size:14px;line-height:1.8;color:#e2e9ef;margin:18px 0 25px}.person{display:flex;align-items:center;gap:11px}.avatar{width:37px;height:37px;border-radius:50%;background:#d9e8c8;color:#31441d;display:grid;place-items:center;font-weight:800}.person strong{display:block;font-size:12px}.person span{font-size:10px;color:#a8b7c5}
+    .packages{background:#fff}.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.package{border:1px solid var(--line);border-radius:12px;padding:27px;position:relative}.package.featured{border:2px solid #9fc85c;box-shadow:0 15px 40px #1c2b1810}.popular{position:absolute;right:16px;top:16px;background:#edf6df;color:#557d24;padding:5px 9px;border-radius:30px;font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    .package h3{font-size:19px;margin:5px 0}.package .desc{font-size:12px;color:var(--muted);min-height:42px}.price{font:800 29px Manrope;margin:22px 0 3px;letter-spacing:-.05em}.period{font-size:11px;color:#7a8793}.package ul{padding:17px 0 10px;list-style:none;margin:0;display:grid;gap:12px;border-top:1px solid var(--line);margin-top:20px}.package li{font-size:12px;color:#536171}.package li:before{content:"✓";color:#6d9835;font-weight:800;margin-right:9px}
+    .cta-band{background:var(--green);padding:48px 0}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:24px}.cta-inner h2{font-size:32px;margin:0 0 7px}.cta-inner p{font-size:13px;margin:0;color:#455538}
+    .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.faq{padding:20px;border:1px solid var(--line);border-radius:9px;background:white}.faq h3{font-size:14px;margin:0 0 8px}.faq p{font-size:12px;color:var(--muted);margin:0;line-height:1.8}
+    footer{background:#0b1522;color:#d8e1e9;padding:48px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px}.footer-brand p{font-size:12px;color:#9cabb9;max-width:300px;line-height:1.8}.footer-col strong{font:700 12px Manrope;display:block;margin-bottom:14px}.footer-col a,.footer-col span{display:block;font-size:11px;color:#9cabb9;margin:9px 0}.copyright{border-top:1px solid #263646;margin-top:35px;padding-top:18px;font-size:10px;color:#7f91a1;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .modal-backdrop{display:none;position:fixed;inset:0;background:#07111dcc;z-index:50;align-items:center;justify-content:center;padding:18px}.modal-backdrop.show{display:flex}.modal{width:min(620px,100%);max-height:92vh;overflow:auto;background:white;border-radius:14px;padding:28px;position:relative;box-shadow:0 25px 80px #0005}.modal h2{font-size:27px;margin:5px 0 7px}.modal-intro{font-size:12px;color:var(--muted);margin:0 0 22px}.close{position:absolute;right:18px;top:15px;border:0;background:#f0f2ef;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:18px}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:700;color:#435164}.field input,.field select,.field textarea{width:100%;border:1px solid #dce2da;border-radius:7px;padding:12px;font:13px "DM Sans";outline:none;background:white}.field input:focus,.field select:focus,.field textarea:focus{border-color:#8db64c;box-shadow:0 0 0 3px #b9e76933}
+    .summary{background:#f2f5ee;border-radius:8px;padding:15px;margin:17px 0;display:flex;justify-content:space-between;gap:12px;font-size:12px}.summary strong{font:800 16px Manrope}.payment-options{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:9px 0 17px}.pay-option{border:1px solid #dce2da;border-radius:7px;padding:12px;font-size:11px;cursor:pointer}.pay-option input{accent-color:#70983c;margin-right:6px}
+    .fineprint{font-size:10px;color:#7b8792;line-height:1.6;margin:12px 0}.success{display:none;text-align:center;padding:20px 5px}.success.show{display:block}.success-icon{width:58px;height:58px;border-radius:50%;background:#edf6df;color:#608b2b;display:grid;place-items:center;font-size:28px;margin:0 auto 15px}.order-code{background:#f1f4ed;border-radius:7px;padding:12px;font:700 14px Manrope;margin:17px 0}
+    @media(max-width:850px){.hero-grid,.why-grid{grid-template-columns:1fr;gap:35px}.hero-visual{min-height:350px}.services,.quote-grid,.package-grid{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.navlinks{gap:15px}.navlinks a:not(.btn){display:none}}
+    @media(max-width:560px){.container{width:min(100% - 30px,1160px)}.topbar .container{justify-content:center}.topbar span:last-child{display:none}nav{height:66px}.navlinks .btn{padding:11px 13px;font-size:11px}.hero{padding:60px 0}.hero-grid{gap:22px}h1{font-size:43px}.hero-visual{min-height:330px}.visual-card{padding:18px}.floating-tag{right:0}.trust .container{justify-content:center}.trust-label{width:100%;text-align:center}.trust-item{font-size:11px}.services,.quote-grid,.package-grid,.process,.faq-grid{grid-template-columns:1fr}section{padding:65px 0}.why-visual{min-height:300px}.cta-inner{align-items:flex-start;flex-direction:column}.cta-inner h2{font-size:27px}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.modal{padding:23px 18px}.payment-options{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>PARTNER PERTUMBUHAN BISNIS ANDA</span><span>Strategi tepat. Pertumbuhan terukur.</span></div></div>
+  <header><nav class="container">
+    <a class="brand" href="#home">GROWTH<span>.</span></a>
+    <div class="navlinks"><a href="#layanan">Layanan</a><a href="#proses">Cara Kerja</a><a href="#paket">Paket</a><a href="#testimoni">Cerita Klien</a><a class="btn" href="#paket">Konsultasi Sekarang ↗</a></div>
+  </nav></header>
+  <main>
+    <section class="hero" id="home"><div class="container hero-grid">
+      <div><div class="eyebrow">BUSINESS GROWTH PARTNER</div>
+        <h1>Bisnis Anda Punya Potensi. Saatnya <em>Tumbuh Lebih Jauh.</em></h1>
+        <p class="hero-copy">Kami membantu pemilik bisnis menemukan peluang, menyusun strategi, dan membangun sistem pertumbuhan yang lebih terarah — agar setiap langkah punya tujuan yang jelas.</p>
+        <div class="hero-actions"><a class="btn" href="#paket">Temukan Strategi Bisnis ↗</a><a class="btn outline" style="color:white;border-color:#607184" href="#layanan">Jelajahi Layanan</a></div>
+        <div class="hero-note">Konsultasi strategis untuk UMKM, startup, dan bisnis berkembang.</div>
+      </div>
+      <div class="hero-visual"><div class="visual-card">
+        <div class="visual-top"><span>GROWTH PERFORMANCE</span><span>● LIVE CONCEPT</span></div>
+        <div class="visual-title">Your next chapter starts here.</div><div class="visual-sub">Ilustrasi dashboard perencanaan pertumbuhan</div>
+        <div class="chart"><div class="bar" style="height:25%"></div><div class="bar" style="height:34%"></div><div class="bar" style="height:31%"></div><div class="bar" style="height:49%"></div><div class="bar" style="height:58%"></div><div class="bar" style="height:68%"></div><div class="bar" style="height:86%"></div></div>
+        <div class="chart-labels"><span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MEI</span><span>JUN</span><span>JUL</span></div>
+        <div class="metric-row"><div class="metric"><strong>01</strong><span>Strategi yang terarah</span></div><div class="metric"><strong>360°</strong><span>Perspektif bisnis</span></div></div>
+      </div><div class="floating-tag">GROW WITH PURPOSE ↗</div></div>
+    </div></section>
+    <div class="trust"><div class="container"><span class="trust-label">Kami membantu bisnis di berbagai tahap</span><span class="trust-item">STARTUP</span><span class="trust-item">UMKM</span><span class="trust-item">RETAIL</span><span class="trust-item">PROFESSIONAL</span><span class="trust-item">DIGITAL BUSINESS</span></div></div>
+    <section id="layanan"><div class="container"><div class="section-head"><div class="kicker">APA YANG KAMI LAKUKAN</div><h2>Solusi strategis untuk tantangan bisnis nyata.</h2><p>Mulai dari menemukan arah, menjangkau pelanggan yang tepat, hingga membangun proses kerja yang lebih efektif. Kami membantu Anda melihat bisnis dari sudut pandang yang lebih luas.</p></div>
+      <div class="services">
+        <article class="service"><div class="service-icon">⌁</div><h3>Business Strategy</h3><p>Petakan posisi bisnis, tentukan prioritas, dan susun rencana pertumbuhan yang realistis sesuai tujuan usaha.</p></article>
+        <article class="service"><div class="service-icon">↗</div><h3>Marketing & Branding</h3><p>Bangun pesan merek yang kuat dan strategi pemasaran untuk menjangkau calon pelanggan yang tepat.</p></article>
+        <article class="service"><div class="service-icon">▦</div><h3>Operational Excellence</h3><p>Evaluasi alur kerja dan identifikasi peluang efisiensi agar operasional bisnis lebih tertata.</p></article>
+      </div>
+    </div></section>
+    <section class="why"><div class="container why-grid">
+      <div class="why-visual"><div class="eyebrow">THE GROWTH MINDSET</div><div><div class="big">Think.</div><div class="big">Plan.</div><div class="big">Grow.</div><p>Pertumbuhan yang berkelanjutan dimulai dari keputusan yang tepat.</p></div><div style="font-size:10px;color:#9eb0bf;letter-spacing:.13em">GROWTH CONSULTING / 2026</div></div>
+      <div><div class="section-head"><div class="kicker">MENGAPA GROWTH CONSULTING</div><h2>Bukan sekadar saran. Kami bantu ubah rencana menjadi langkah nyata.</h2><p>Pendekatan kami berangkat dari kebutuhan dan kondisi bisnis Anda, bukan solusi satu pola untuk semua.</p></div>
+        <div class="why-list">
+          <div class="why-item"><div class="check">✓</div><div><h3>Strategi sesuai kondisi bisnis</h3><p>Rekomendasi disusun berdasarkan tujuan, tantangan, dan sumber daya yang Anda miliki.</p></div></div>
+          <div class="why-item"><div class="check">✓</div><div><h3>Fokus pada prioritas berdampak</h3><p>Ketahui langkah mana yang perlu dikerjakan lebih dulu agar waktu dan anggaran lebih terarah.</p></div></div>
+          <div class="why-item"><div class="check">✓</div><div><h3>Pendampingan yang terstruktur</h3><p>Miliki rencana tindak lanjut dan sesi evaluasi untuk menjaga implementasi tetap berjalan.</p></div></div>
+        </div>
+      </div>
+    </div></section>
+    <section id="proses"><div class="container"><div class="section-head center"><div class="kicker">PROSES KAMI</div><h2>Empat langkah menuju bisnis yang lebih siap tumbuh.</h2><p>Proses sederhana dan kolaboratif agar Anda tahu apa yang dikerjakan di setiap tahap.</p></div>
+      <div class="process"><div class="step"><div class="step-no">01 / DISCOVER</div><h3>Kenali bisnis Anda</h3><p>Kami memahami tujuan, kondisi, dan tantangan utama bisnis.</p></div><div class="step"><div class="step-no">02 / ANALYZE</div><h3>Analisis peluang</h3><p>Mengidentifikasi kekuatan, hambatan, dan ruang perbaikan.</p></div><div class="step"><div class="step-no">03 / STRATEGIZE</div><h3>Susun strategi</h3><p>Membuat rekomendasi dan rencana aksi sesuai prioritas.</p></div><div class="step"><div class="step-no">04 / GROW</div><h3>Evaluasi progres</h3><p>Meninjau implementasi dan menentukan langkah berikutnya.</p></div></div>
+    </div></section>
+    <section class="testimonials" id="testimoni"><div class="container"><div class="section-head"><div class="kicker">CERITA KLIEN</div><h2>Kolaborasi yang dimulai dari percakapan.</h2><p>Contoh format testimoni untuk keperluan demonstrasi website. Ganti dengan ulasan klien asli setelah tersedia.</p></div>
+      <div class="quote-grid">
+        <article class="quote"><div class="stars">★★★★★</div><blockquote>“Sesi konsultasi membantu kami melihat kembali prioritas pemasaran. Rencana kerja yang disusun terasa lebih jelas dan mudah dibahas bersama tim.”</blockquote><div class="person"><div class="avatar">AR</div><div><strong>Andi Rahman</strong><span>Pemilik UMKM — contoh testimoni</span></div></div></article>
+        <article class="quote"><div class="stars">★★★★★</div><blockquote>“Diskusinya terstruktur. Kami jadi punya gambaran proses mana yang perlu dibenahi lebih dulu sebelum memperluas usaha.”</blockquote><div class="person"><div class="avatar">DP</div><div><strong>Dina Putri</strong><span>Founder Startup — contoh testimoni</span></div></div></article>
+        <article class="quote"><div class="stars">★★★★★</div><blockquote>“Pendekatan yang digunakan membuat tujuan bisnis lebih terukur. Rekomendasinya juga disesuaikan dengan kapasitas tim kami.”</blockquote><div class="person"><div class="avatar">BS</div><div><strong>Bima Saputra</strong><span>Business Owner — contoh testimoni</span></div></div></article>
+      </div>
+    </div></section>
+    <section class="packages" id="paket"><div class="container"><div class="section-head center"><div class="kicker">PILIH LAYANAN</div><h2>Investasi untuk langkah bisnis berikutnya.</h2><p>Pilih paket yang sesuai dengan kebutuhan Anda. Tim kami akan menghubungi untuk mengonfirmasi ruang lingkup layanan.</p></div>
+      <div class="package-grid">
+        <article class="package"><h3>Starter Insight</h3><p class="desc">Untuk Anda yang membutuhkan sudut pandang dan arahan awal.</p><div class="price">Rp5 jt</div><div class="period">per proyek · harga simulasi</div><ul><li>1 sesi konsultasi (90 menit)</li><li>Analisis awal kondisi bisnis</li><li>Ringkasan rekomendasi</li><li>Rencana aksi 30 hari</li></ul><button class="btn outline choose" data-package="Starter Insight" data-price="5000000">Pilih Paket ↗</button></article>
+        <article class="package featured"><span class="popular">Paling diminati</span><h3>Growth Accelerator</h3><p class="desc">Untuk bisnis yang siap menyusun dan menjalankan strategi pertumbuhan.</p><div class="price">Rp10 jt</div><div class="period">per proyek · harga simulasi</div><ul><li>4 sesi konsultasi terjadwal</li><li>Audit strategi bisnis & pemasaran</li><li>Roadmap pertumbuhan 90 hari</li><li>Pendampingan implementasi</li><li>Evaluasi progres</li></ul><button class="btn choose" data-package="Growth Accelerator" data-price="10000000">Pilih Paket ↗</button></article>
+        <article class="package"><h3>Business Transformation</h3><p class="desc">Untuk bisnis yang membutuhkan pendampingan lebih menyeluruh.</p><div class="price">Rp15 jt</div><div class="period">per proyek · harga simulasi</div><ul><li>8 sesi konsultasi</li><li>Analisis strategi & operasional</li><li>Roadmap transformasi 6 bulan</li><li>Pendampingan lintas fungsi</li><li>Laporan evaluasi berkala</li></ul><button class="btn outline choose" data-package="Business Transformation" data-price="15000000">Pilih Paket ↗</button></article>
+      </div><p style="font-size:10px;color:#89938b;text-align:center;margin-top:18px">Harga dan paket di atas merupakan simulasi untuk proyek ujian, bukan penawaran komersial aktif.</p>
+    </div></section>
+    <div class="cta-band"><div class="container cta-inner"><div><h2>Siap membawa bisnis ke tahap berikutnya?</h2><p>Ceritakan tantangan Anda. Mari temukan langkah pertumbuhan yang paling masuk akal.</p></div><button class="btn dark" id="ctaBook">Jadwalkan Konsultasi ↗</button></div></div>
+    <section><div class="container"><div class="section-head center"><div class="kicker">FAQ</div><h2>Pertanyaan yang sering diajukan.</h2></div><div class="faq-grid">
+      <article class="faq"><h3>Apakah layanan cocok untuk bisnis kecil?</h3><p>Ya. Paket dapat dipilih sesuai tahap dan kebutuhan bisnis, termasuk UMKM dan usaha yang sedang berkembang.</p></article>
+      <article class="faq"><h3>Bagaimana proses dimulai?</h3><p>Isi formulir pemesanan. Tim akan menghubungi Anda untuk memahami kebutuhan dan mengonfirmasi jadwal.</p></article>
+      <article class="faq"><h3>Apakah hasil bisnis dijamin meningkat?</h3><p>Tidak ada jaminan hasil tertentu. Hasil implementasi dipengaruhi banyak faktor, termasuk kondisi pasar dan pelaksanaan rekomendasi.</p></article>
+      <article class="faq"><h3>Apakah harga dapat disesuaikan?</h3><p>Harga pada website ini adalah simulasi. Ruang lingkup dan biaya aktual perlu disepakati setelah konsultasi kebutuhan.</p></article>
+    </div></div></section>
+  </main>
+  <footer><div class="container"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="#home" style="color:white">GROWTH<span>.</span></a><p>Mitra konsultasi untuk membantu bisnis menyusun strategi, memperkuat fondasi, dan bertumbuh dengan tujuan yang jelas.</p></div><div class="footer-col"><strong>JELAJAHI</strong><a href="#layanan">Layanan</a><a href="#proses">Cara Kerja</a><a href="#paket">Paket Konsultasi</a></div><div class="footer-col"><strong>HUBUNGI KAMI</strong><span>hello@growthconsulting.example</span><span>Senin–Jumat, 09.00–17.00 WIB</span><span>Indonesia</span></div></div><div class="copyright"><span>© 2026 GROWTH CONSULTING. DEMO WEBSITE UNTUK TUGAS UJIAN.</span><span>Strategi tepat. Pertumbuhan terukur.</span></div></div></footer>
+
+  <div class="modal-backdrop" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal"><button class="close" id="closeModal" aria-label="Tutup">×</button>
+      <div id="bookingContent">
+        <div class="kicker">MULAI KOLABORASI</div><h2 id="modalTitle">Pesan konsultasi bisnis</h2><p class="modal-intro">Lengkapi informasi berikut. Pesanan akan dibuat sebagai simulasi transaksi untuk demonstrasi website.</p>
+        <form id="bookingForm">
+          <div class="form-grid">
+            <div class="field"><label for="name">Nama lengkap *</label><input id="name" name="name" required placeholder="Nama Anda"></div>
+            <div class="field"><label for="email">Email aktif *</label><input id="email" name="email" type="email" required placeholder="nama@email.com"></div>
+            <div class="field"><label for="phone">Nomor WhatsApp *</label><input id="phone" name="phone" required type="tel" placeholder="08xxxxxxxxxx"></div>
+            <div class="field"><label for="business">Nama / jenis bisnis *</label><input id="business" name="business" required placeholder="Contoh: Toko fashion"></div>
+            <div class="field full"><label for="package">Pilih paket *</label><select id="package" name="package" required><option value="Growth Accelerator" data-price="10000000">Growth Accelerator — Rp10.000.000</option><option value="Starter Insight" data-price="5000000">Starter Insight — Rp5.000.000</option><option value="Business Transformation" data-price="15000000">Business Transformation — Rp15.000.000</option></select></div>
+            <div class="field full"><label for="need">Ceritakan kebutuhan bisnis (opsional)</label><textarea id="need" name="need" rows="3" placeholder="Apa tantangan utama bisnis Anda?"></textarea></div>
+          </div>
+          <div class="summary"><span id="summaryName">Growth Accelerator</span><strong id="summaryPrice">Rp10.000.000</strong></div>
+          <div class="field"><label>Metode pembayaran (simulasi)</label></div>
+          <div class="payment-options"><label class="pay-option"><input type="radio" name="payment" value="Transfer Bank (simulasi)" checked> Transfer Bank</label><label class="pay-option"><input type="radio" name="payment" value="E-Wallet (simulasi)"> E-Wallet</label></div>
+          <p class="fineprint">Dengan melanjutkan, Anda memahami bahwa ini adalah demo checkout. Tidak ada uang yang ditagihkan dan tidak ada data pembayaran sensitif yang diminta.</p>
+          <button class="btn dark" type="submit" style="width:100%">Buat Pesanan & Lanjutkan ↗</button>
+        </form>
+      </div>
+      <div class="success" id="successPanel"><div class="success-icon">✓</div><div class="kicker">PESANAN BERHASIL DIBUAT</div><h2>Terima kasih!</h2><p style="font-size:13px;color:#687586">Pesanan demo Anda telah tercatat di halaman ini. Tim Growth Consulting akan menindaklanjuti pada skenario demonstrasi.</p><div class="order-code" id="orderCode"></div><div class="summary"><span id="successPackage">Paket</span><strong id="successPrice"></strong></div><p id="successPayment" style="font-size:12px;color:#687586"></p><p class="fineprint">Status: <strong>Menunggu konfirmasi (DEMO)</strong>. Ini bukan bukti pembayaran atau transaksi uang sungguhan.</p><button class="btn dark" id="doneBtn" style="width:100%">Selesai</button></div>
+    </div>
+  </div>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  const modal = document.getElementById('bookingModal');
+  const form = document.getElementById('bookingForm');
+  const packageSelect = document.getElementById('package');
+  const bookingContent = document.getElementById('bookingContent');
+  const successPanel = document.getElementById('successPanel');
+
+  if (!modal || !form || !packageSelect) {
+    alert('Komponen checkout tidak ditemukan. Pastikan membuka file index.html yang lengkap.');
+    return;
+  }
+
+  const rupiah = value => 'Rp' + Number(value).toLocaleString('id-ID');
+
+  function updateSummary() {
+    const option = packageSelect.options[packageSelect.selectedIndex];
+    document.getElementById('summaryName').textContent = option.value;
+    document.getElementById('summaryPrice').textContent = rupiah(option.dataset.price);
+  }
+
+  function openModal(packageName) {
+    if (packageName) packageSelect.value = packageName;
+    updateSummary();
+    bookingContent.style.display = 'block';
+    successPanel.classList.remove('show');
+    modal.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    modal.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.choose').forEach(function (button) {
+    button.addEventListener('click', function () { openModal(button.dataset.package); });
+  });
+  document.getElementById('ctaBook').addEventListener('click', function () {
+    openModal('Growth Accelerator');
+  });
+  document.getElementById('closeModal').addEventListener('click', closeModal);
+  document.getElementById('doneBtn').addEventListener('click', closeModal);
+  packageSelect.addEventListener('change', updateSummary);
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape') closeModal();
+  });
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const requiredFields = [
+      { id: 'name', label: 'Nama lengkap' },
+      { id: 'email', label: 'Email aktif' },
+      { id: 'phone', label: 'Nomor WhatsApp' },
+      { id: 'business', label: 'Nama / jenis bisnis' }
+    ];
+
+    for (const field of requiredFields) {
+      const input = document.getElementById(field.id);
+      if (!input.value.trim()) {
+        alert('Mohon isi ' + field.label + ' terlebih dahulu.');
+        input.focus();
+        return;
+      }
+    }
+
+    const email = document.getElementById('email');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+      alert('Format email belum benar. Contoh: nama@email.com');
+      email.focus();
+      return;
+    }
+
+    const data = new FormData(form);
+    const option = packageSelect.options[packageSelect.selectedIndex];
+    const orderNumber = 'GC-' + Date.now().toString().slice(-8);
+
+    document.getElementById('orderCode').textContent = 'Nomor pesanan: ' + orderNumber;
+    document.getElementById('successPackage').textContent = data.get('package');
+    document.getElementById('successPrice').textContent = rupiah(option.dataset.price);
+    document.getElementById('successPayment').textContent =
+      'Metode pilihan: ' + data.get('payment') +
+      '. Ini adalah checkout demo; pesanan tidak dikirim ke server dan pembayaran tidak diproses.';
+
+    bookingContent.style.display = 'none';
+    successPanel.classList.add('show');
+    form.reset();
+    updateSummary();
+  });
+
+  updateSummary();
+});
+</script>
+</body>
+</html>
